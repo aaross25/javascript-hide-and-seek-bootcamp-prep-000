@@ -14,19 +14,10 @@ function increaseRankBy(n){
 }
 
 function deepestChild(){
-  const list = document.getElementById('app').querySelectorAll('ul.ranked-list li');
-    for (let i=0, 1=list.length; i<1; i++) {
-      list[i].innerHTML = (i+1).toString();
+  var lis=document.getElementById("grand-node").querySelectorAll("div");
+  var test;
+  for(let i=0;i<lis.length-1;i++) {
+    test=lis[i].querySelector("div");
   }
-  //const lis = document.getElementById('#grand-node').querySelectorAll('ul.ranked-list li')
-//  for (let i=0; i<lis.length; i++){
-  //  lis[i].innerHTML=(i+1).toString()
-//  }
-  
-  //var grandNode = document.querySelector('#grand-node')
-  //var deepestNode = grandNode.children[0]
-  //for (var i=0; !deepestNode.children[i]; i++){
-  //  deepestNode = deepestNode.children[i]
-  //}
-//  return deepestNode
+return test;
 }
